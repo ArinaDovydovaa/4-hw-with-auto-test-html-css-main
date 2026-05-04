@@ -82,7 +82,7 @@ select {
     font-weight: 400;
     font-size: 16px;
     appearance: none; 
-    background-image: url("./ep_arrow-down.svg");
+    background-image: url("assets/images/ep_arrow-down.svg");
     background-repeat: no-repeat;
     background-position: right 12px top 50%;
 }
@@ -117,7 +117,7 @@ select:hover,
 .frameworks-list {
     font-weight: 400;
     font-size: 16px;
-    list-style-image: url(./solar_map-arrow-up-bold.svg);
+    list-style-image: url(assets/images/solar_map-arrow-up-bold.svg);
     padding-left: 20px;
 }
 
@@ -144,7 +144,11 @@ select:hover,
 }
 
 form {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
     /* 📍 Свойства для расположения элементов (инпута и кнопки) и отступа между ними */
 }
 
@@ -221,7 +225,7 @@ footer {
         display: flex;
         flex-direction: column-reverse;
         align-items: flex-start;
-        column-gap: 60px;
+        gap: 60px;
         /* 📍 Свойства для расположения элементов и отступа между ними */
     }
 
@@ -253,19 +257,25 @@ footer {
 /* Стили для адаптива под мобильные устройства */
 @media screen and (max-width: 576px) {
     .main-section {
+        padding: 30px 0 60px;
+
         /* 📍 Внутренние отступы сверху и снизу */
     }
 
     .main-section .wrapper {
+        gap: 40px;
         /* 📍 Отступ между изображением и блоком с текстом */
     }
 
     .main-title {
+        font-weight: 700;
+        font-size: 36px;
         /* 📍 Размер шрифта */
     }
 
     .about-section .wrapper,
     .info-wrapper {
+        gap: 50px;
         /* 📍 Отступ между изображением и блоком с текстом */
     }
 }
